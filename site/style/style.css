@@ -1,0 +1,1055 @@
+* {
+    font-family: helvetica;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*C8262C*/
+body{
+    background-color:#C7212F;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+header{
+    position: fixed ;
+    width: 100%;
+    display: flex;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    transition: background-color 0.5s;
+    color: #ffffff;
+}
+header.scrolled{
+    background-color: white;
+}
+nav{
+    display: flex;
+    color: #C7212F;
+
+ }
+ 
+#menu {
+    transition: color 0.3s ease; 
+}
+#menu.scrolled {
+    color: rgb(0, 0, 0);
+}
+#menu.scrolled a {
+    color: #C7212F;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+    color: rgb(255, 255, 255);
+    margin-right: 100px; 
+}
+.nav-list li{
+    letter-spacing: 1px;
+    margin-left: 32px;
+    font-size: 12px;
+    font-family: Helvetica;
+}
+
+.nav-logo{
+    margin-left: 60px;
+    width: 80px;   
+    transition: all 0.5s;
+}
+.nav-logo:hover{
+    -webkit-transform: scale(1.25);
+    transform: scale(1.25);
+}
+
+.textos2{
+    transition: color 0.5s;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.textos2.scrolled{
+    color: #C7212F;
+}
+
+.textos2.hover{
+    -webkit-transform: scale(1.05);
+    transform: scale(1.25);
+}
+
+.textos1{
+    transition: color 0.5s;
+    cursor: pointer;
+    transition: all 0.5s;
+
+}
+.textos1.scrolled {
+    color: #C7212F; 
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.textos1:hover{
+    -webkit-transform: scale(1.05);
+    transform: scale(1.25);
+    
+}
+.laptop{
+    display: flex;
+    width: 400px;
+    position:absolute;
+    top: 38%;
+    left: 60%;
+    z-index: 999;
+}
+
+
+.imagem-home-page{
+    width:420vh;
+    height:180vh;
+    position:absolute;
+    top: -27.7%;
+    right:-50%;
+    object-fit: fill;
+}
+.total{
+    width: 100%;
+    height: 100%;
+}
+
+.texto-home-page{
+    z-index: 999;
+    position: absolute;
+    top:30%;
+    left:18%;
+    width: 450px;
+    height: 450px;
+    color: white;
+    text-align: justify;
+}
+.h1-home-page{
+    font-size: 2.8rem;
+    text-align: left;
+}
+.p-home-page{
+    font-size: 1.8em;
+    text-align: justify;
+
+}
+
+.nav-list.scrolled{
+    color: #C7212F;
+}
+.infraestrutura{
+    color:white;
+    width:100%;
+    height:100px;
+}
+#fundo-da-infraestrutura{
+    position: absolute;
+    top: -64%;
+    left:-140%;
+    z-index: 998;
+    object-fit: fill;
+    width:790vh;
+    height:auto;
+}
+
+#gallery{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    margin-bottom: 40px;
+    width:50vh;
+    height: 40vh;
+    z-index: 998;
+    position:absolute;
+    top:135%;
+    left: 15%;
+    border-radius:10px;
+    text-align:center;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container {
+    background-color: white;
+    width:50vh;
+    height: 40vh;
+    overflow: hidden;
+    border: 1px solid #000000;
+    border-radius:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.arrowButton {
+    margin: 10px;
+    padding: 10px 15px;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: #ffffff; 
+    color: rgb(0, 0, 0); /* Cor do texto */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; /* Efeito de transição */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* Sombra inicial */
+    position: relative; /* Para efeito de movimento */
+}
+
+.arrowButton:hover {
+    color: #ffffff;
+    background-color: #000000; /* Muda a cor de fundo no hover */
+    box-shadow: 0 10px 30px #000000; /* Sombra mais intensa */
+    transform: translateY(-3px) scale(1.1); /* Move para cima e aumenta de tamanho */
+}
+
+.arrowButton:active {
+    transform: translateY(1px) scale(0.9); /* Move para baixo e diminui ao clicar */
+}
+
+.p-infraestrutura{
+    color:black;
+
+}
+.texto-infraestrutura{
+    color:white;
+    width:450px;
+    height:450px;
+    z-index: 998;
+    position: absolute;
+    top: 125%;
+    left:45%;
+    
+}
+.titulo-infraestrututra{
+    color:white;
+    text-align: justify;
+}
+.p-infraestrutura2{
+    text-align: justify;
+    color: white;
+}
+.fundo-sobre{
+    position: absolute;
+    top:109%;
+    left:-75%;
+    z-index: 998;
+    object-fit: fill;
+    width:245%;
+    height:500%;
+}
+#caixa-para-titulo-sobre1{
+    background-color: #C7212F;
+    color:white;
+    width:38vh;
+    height:8vh;
+    z-index: 998;
+    position: absolute;
+    top: 249%;
+    left: 24%;
+    border-radius: 100px;
+    font-weight: bold;
+}
+#p-dentro-da-caixa1{
+    color: white;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-top: 21px;
+}
+
+#caixa-para-titulo-sobre2{
+    background-color: #C7212F;
+    color:white;
+    width:40vh;
+    height:9vh;
+    z-index: 998;
+    position: absolute;
+    top: 280%;
+    left:24%;
+    border-radius: 100px;
+    font-weight: bold;
+    text-align: center;
+}
+#p-dentro-da-caixa2{
+    color: white;
+    justify-content: center;
+    text-align:vh center;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#p-fora-da-caixa1{
+    color: #000;
+    font-size:12px;
+    position: absolute;
+    bottom:-130px;
+    width:325px;
+    text-align: justify;
+    left: -20px;
+}
+
+#p-fora-da-caixa2{
+    color: #000;
+    font-size:12px;
+    position: absolute;
+    bottom:-157px;
+    width:325px;
+    text-align: justify;
+    left: -20px;
+}
+
+#p-fora-da-caixa3{
+    color: #000;
+    font-size:12px;
+    position: absolute;
+    bottom:-130px;
+    width:280px;
+    text-align: justify;
+    left: -15px;
+}
+#p-fora-da-caixa4{
+    color: #000;
+    font-size:12px;
+    position: absolute;
+    bottom:-120;
+    width:39vh;
+    height: 1vh;
+    text-align: justify;
+    left: 10px;
+}
+#p-dentro-da-caixa3{
+    color: white;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-top: 21px;
+}
+#p-dentro-da-caixa4{
+    color: white;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 12px;
+    margin-left: 2px;
+
+}
+#caixa-para-titulo-sobre3{
+    background-color: #C7212F;
+    color:white;
+    width:38vh;
+    height:8vh;
+    z-index: 998;
+    position: absolute;
+    top: 249%;
+    left:57%;
+    border-radius: 100px;
+    font-weight: bold;
+}
+#caixa-para-titulo-sobre4{
+    background-color: #C7212F;
+    color:white;
+    width:38vh;
+    height:9vh;
+    z-index: 998;
+    position: absolute;
+    top: 280%;
+    left:57%;
+    border-radius: 100px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.solucoes{
+    background-color: #38ded0;
+    color:white;
+    width:300px;
+    height:75px;
+    z-index: 998;
+    position: absolute;
+    top: 315%;
+    left:40.5%;
+    border-radius: 100px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+#p-dentro-da-caixa5{
+    color: white;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 16px;
+    font-size: 25px;
+}
+.p-do-solucao{
+    color: rgb(255, 255, 255);
+    text-align: justify;
+    margin-top: 20px;
+    font-size: 1.1rem;
+}
+.solucao1{
+    background-color: #38ded0;
+    border-radius: 10px;
+    width: 50vh;
+    height: 40vh;
+    position:relative;
+    top:60%;
+    left: -6%;
+    
+}
+.solucao2{
+    background-color: #38ded0;
+    border-radius: 10px;
+    width: 50vh;
+    height: 40vh;
+    position:relative;
+    top:-36.3vh;
+    left:50vh;
+}
+.solucao3{
+    background-color: #38ded0;
+    border-radius: 10px;
+    width: 50vh;
+    height: 40vh;
+    position:relative;
+    top:-79vh;
+    right: 56vh;
+}
+.fundo-projeto-interdisciplinar{
+    position: absolute;
+    top: 267%;
+    left:-40%;
+    z-index: 998;
+    object-fit: fill;
+    width:178%;
+    height:300%;
+}
+.descricao-do-projeto{
+    background-color:#C7212F ;
+    border-radius: 10px;
+    width: 50vh;
+    height: 40vh;
+    position:absolute;
+    top: 390%;
+    left:13.2%;
+    z-index: 999;
+    overflow:auto;
+    z-index: 1000;
+
+ }
+
+ .necessidades-do-projeto{
+    background-color:#38ded0 ;
+    border-radius: 10px;
+    width: 50vh;
+    height: 40vh;
+    position:absolute;
+    top: 390%;
+    left:39%;
+    z-index: 1000;
+    overflow:auto;
+ }
+
+ .sobre-ods{
+    background-color:#C7212F ;
+    border-radius: 10px;
+    width: 50vh;
+    height: 40vh;
+    position:absolute;
+    top: 390%;
+    left:65%;
+    z-index: 1000;
+    overflow:auto;
+ }
+.hr-home-page{ 
+    background-color: white;
+    margin: 2px 2px;
+}
+a{
+    font-weight: bold;
+}
+
+.p-do-projeto1{
+    color: white;
+    line-height: 1.3;
+    margin:15px;
+    text-align: justify;
+}
+.lista-necessidades{
+    list-style-type: none;
+    padding-left: 0;
+}
+.p-do-projeto2{
+    color: white;
+    line-height: 1.5;
+    margin:15px 10px;
+    text-align: justify;
+}
+.sobre-projeto{
+    background-color: #38ded0;
+    color:white;
+    width:300px;
+    height:75px;
+    z-index: 998;
+    position: absolute;
+    top: 375%;
+    left:40.5%;
+    border-radius: 100px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.p-sobre-o-projeto{
+    color: white;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 1.6em;
+}
+.ods-geral{
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    line-height: 1.3;
+}
+.ods-especifico{
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    line-height: 1.3;
+}
+.caixa-fotos-descricao1{
+    width: 50vh;
+    height: 45vh;
+    position: absolute;
+    top: 435%;
+    left:15%;
+    z-index: 1000;
+    overflow-x: auto;
+    border:1px solid #000;
+
+}   
+.fotos-pessoas{
+    width: auto;
+    height: 35vh;
+    border:  1px solid black;
+    margin-right:25px;
+
+};
+
+.fotos-de-pessoas{
+    width: auto;
+    height: 35vh;
+    border:  1px solid black;
+    margin:40px;
+}
+
+#caixa-fotos{
+    width: 50vh;
+    height: 45vh;
+    position: absolute;
+    top: 435%;
+    left:65%;
+    z-index: 1000;
+    overflow-x: auto;
+    border:1px solid #000;
+}
+
+.descricao{
+    color:#000;
+    text-align: center;
+}
+.fundo-acontece-na-etec{
+    position: absolute;
+    top: 360%;
+    left: -120%;
+    z-index: 998;
+    width: 705vh;
+    height:650h;
+    object-fit: fill;
+}
+#texto-na-etec{
+    background-color:#ffffff ;
+    border-radius: 10px;
+    width: 80vh;
+    height: 90vh;
+    position:absolute;
+    top: 520%;
+    left:10%;
+    z-index: 1000;
+    overflow:auto;
+    text-align: center;
+}
+.texto-etec{
+    color: #000;
+    font-size: 1.6em;
+    text-align: justify;
+    margin-top: 50px;
+    z-index: 1000;
+}
+
+.auditorio{
+    width: 40vh;
+    height: auto;
+    position: absolute;
+    top: 520%;
+    left: 60%;
+    z-index: 999;
+}
+
+.praca{
+    width: 50vh;
+    height: auto;
+    position: absolute;
+    top: 580%;
+    left: 60%;
+    z-index: 999;
+}
+.fundo-contato{
+    position:absolute;
+    top: 500%;
+    left: -30%;
+    z-index: 999;
+    width: 700vh;
+    height: auto;
+}
+#caixa-formulario{
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 123vh;
+    height: 90vh;
+    position:absolute;
+    top:640%;
+    left: 20%;
+    z-index: 999;
+    text-align: center;
+}
+.form-container{
+    width: 300px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+
+  .form-group {
+    margin-bottom: 10px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  input, textarea {
+    width: 97.3%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  textarea {
+    resize: vertical; /* Permite redimensionar verticalmente */
+    min-height: 80px;
+  }
+
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #45a049;
+  }
+.estrelas{
+    z-index:1000 ;
+    margin: 70px;
+    ;
+}
+.avaliacao {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.estrelas {
+    direction: rtl; /* Inverte a ordem das estrelas para facilitar a seleção */
+    display: flex;
+    margin:0.5px;
+    text-align: center;
+    margin-left:20px;
+}
+
+.estrelas input {
+    display: none; /* Esconde os botões de rádio */
+}
+
+.estrelas label {
+    font-size: 50px;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.estrelas input:checked ~ label,
+.estrelas label:hover,
+.estrelas label:hover ~ label {
+    color: gold;
+}
+.rodape {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position:absolute;
+    width: 100%;
+    height: 150%;
+    bottom: 200%;
+    top:750%;
+    left: 0%;
+    z-index: 1000;
+}
+#logo-rodape{
+    width:80vh ;
+    position: relative;
+    margin: 5vh;
+}
+.conteudo-rodape p {
+    margin: 5px 0;
+}
+
+#etec-hortolandia{
+    position: absolute;
+    top: 208%;
+    left: 52%;
+    z-index: 999;
+    width: 50vh;
+}
+#caixa-sobre-a-etec{
+    background-color:#38ded0;
+    border-radius: 10px;
+    width: 40vh;
+    height: 30vh;
+    position:absolute;
+    top: 210%;
+    left:30%;
+    z-index: 1000;
+    overflow:auto;
+    box-sizing: border-box;
+}
+#dentro-da-etec{
+    color: #fff;
+    margin: 10px;
+    padding: 10px;
+    text-align: justify;
+}
+#formulario{
+    text-align: center;
+}
+
+
+@media (max-width: 480px) {
+    .nav-logo{
+        width: 40px;
+        margin-left:10px ;
+    }
+    .nav-list{
+        display: grid;
+        flex-wrap: wrap; 
+        list-style: none;
+        margin-top:20px;
+        padding: 0;
+        margin-left:-px;
+        grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
+    }
+    header{
+        width:5px;
+        position: fixed;
+    }
+    .nav-list li {
+        flex: 1 1 30%; /* Cada item terá 30% do espaço em breakpoints menores */
+        text-align: center;
+    }
+    .nav-list li:nth-child(n+4) {
+        grid-column: span 1 / span 1; /* Cada item ocupa uma coluna */
+        grid-row: 2; /* Coloca esses itens na segunda linha */
+    }
+    .imagem-home-page{
+        width: 170vh;
+    }
+    .h1-home-page{
+        font-size: 1rem;
+    }
+    .p-home-page{
+        font-size: 1rem;
+    }
+    .laptop{
+        width: 38vh;
+        top: 40%;
+        left: 55%;
+    }
+    .texto-home-page{
+        top:40%;
+        left: 7%;
+        width: 40vh;
+    }
+    #gallery{/*Diminui sombra e é o espaço que a imagem ocupa*/
+        width:25vh;
+        height:25vh;
+        top:127%;
+        left:10%;
+    }
+    .texto-infraestrutura{
+        width: 35vh;
+        height: 20vh;
+        box-sizing: border-box;
+    }
+    .titulo-infraestrutura{
+        font-size:0.9rem;
+    }
+    .p-infraestrutura2{
+        font-size: 0.6rem;
+    }
+    #lista-infraestrutura{
+        font-size: 0.6rem;
+    }
+    #fundo-da-infraestrutura{
+        width: 311vh;
+        height:300vh;
+        top: -43px;
+        left: -130%;
+    }
+    .image-container{/*Tamanho da imagem*/
+        width: 25vh;
+        height: 25vh;
+    }
+    .active{
+        width: 25vh;
+    }
+    .fundo-sobre{
+        top: 78%;
+    }
+    #caixa-sobre-a-etec{
+        width:25vh;
+        height: 27vh;
+        top: 180%;
+        left: 20%;
+    }
+    #dentro-da-etec{
+        font-size: 0.7rem;
+    }
+    #etec-hortolandia{
+        width: 35vh;
+        top: 181%;
+        left: 50%;
+    }
+    #caixa-para-titulo-sobre1{
+        width: 18vh;
+        top: 212%;
+    }
+    #caixa-para-titulo-sobre2{
+        width: 18vh;
+        top: 242%;
+    }
+    #caixa-para-titulo-sobre3{
+        width: 18vh;
+        top: 212%;
+    }
+    #caixa-para-titulo-sobre4{
+        width: 18vh;
+        top: 242%;
+    }
+    #p-dentro-da-caixa1{
+        font-size: 0.7rem;
+        margin: 10px;
+    }
+    #p-dentro-da-caixa2{
+        font-size: 0.7rem;
+        margin: 10px;
+    }
+    #p-dentro-da-caixa3{
+        font-size: 0.7rem;
+        margin: 10px;
+    }
+    #p-dentro-da-caixa4{
+        font-size: 0.7rem;
+        margin: 10px;
+    }
+    #p-fora-da-caixa1{
+        font-size: 0.6rem;
+        width: 20vh;
+        height: 20vh;
+        overflow: auto;
+        top: 110%;
+        left: -5%;
+    }
+    #p-fora-da-caixa2{
+        font-size: 0.6rem;
+        width: 20vh;
+        height: 20vh;
+        overflow: auto;
+        top: 110%;
+        left: -5%;
+    }
+    #p-fora-da-caixa3{
+        font-size: 0.6rem;
+        width: 20vh;
+        height: 20vh;
+        overflow: auto;
+        top: 110%;
+        left:-5%;
+    }
+    #p-fora-da-caixa4{
+        font-size: 0.6rem;
+        width: 20vh;
+        height: 20vh;
+        overflow: auto;
+        top: 110%;
+        left:-5%;
+    }
+    .solucoes{
+        width: 30vh;
+        top: 275%;
+        left: 35%;
+    }  
+    #p-dentro-da-caixa5{
+        font-size: 1.0rem;
+        margin-top: 25px;
+        top: 205%;
+    }
+    .solucao1{
+        width: 22vh;
+        height: 20vh;  
+        overflow:auto;  
+        margin: 10px;    
+    }
+    .solucao2{
+        width: 22vh;
+        height: 20vh;
+        overflow: auto;
+        top:-100%;
+        left: 80%;
+    }
+    .solucao3{
+        width: 22vh;
+        height: 20vh;
+        top: -250%;
+        left: -80%;
+        overflow: auto;
+    }
+    .p-do-solucao{
+        font-size: 0.8rem;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .sobre-projeto{
+        width: 30vh;
+        top:315%;
+        left:35%;
+    }
+    .p-sobre-o-projeto{
+        font-size:1.0rem;
+    }
+    .descricao-do-projeto{
+        width: 20vh;
+        height:20vh ;
+        top: 330%;
+    }
+    .necessidades-do-projeto{
+        width: 20vh;
+        height: 20vh;
+        top: 330%;
+    }
+    .sobre-ods{
+        width: 20vh;
+        height: 20vh;
+        top: 330%;
+    }
+    .p-do-projeto1{
+        font-size: 0.8rem;
+    }
+    .ods-geral{
+        font-size:0.9rem
+    }
+    .ods-especifico{
+        font-size: 0.9rem;
+    }
+    .caixa-fotos-descricao1{
+            width: 35vh;
+            height:30vh;
+            top: 360%;
+            left: 33%;
+    }
+    #caixa-fotos{
+        width: 35vh;
+        height:30vh;
+        top: 400%;
+        left: 33%;
+    }
+    .fotos-de-pessoas{
+        height: 25vh
+    }
+    .fotos-pessoas{
+        height: 25vh;
+    }
+    .descricao{
+        font-size: 0.7rem;
+    }
+    #texto-na-etec{
+        width: 30vh;
+        height: 50vh;
+        left: 15%;
+        top: 530%;
+    }
+    .texto-etec{
+        font-size:0.7rem;
+    }
+    .auditorio{
+        width: 30vh;
+        top: 555%;
+    }
+    .praca{
+        width: 30vh;
+        top: 535%;
+       
+    }
+    .fundo-acontece-na-etec{
+        width: 300vh;
+        top: 432%;
+        left:-122%;
+        height: 250vh;
+    }
+    #caixa-formulario{
+        width: 60vh;
+        height: 50vh;
+        overflow: auto;
+        top: 599%;
+        left: 15%;
+    }
+    .fundo-contato{
+        width: 300vh;
+        top: 520%;
+        height:220vh
+    }
+    .rodape{
+        top:660%;
+    }
+}
